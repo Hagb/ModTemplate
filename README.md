@@ -1,7 +1,16 @@
-# ModTemplate
-Template for new mods
+# SaveRep mod for Touhou Hisoutensoku
 
-# Build
+This mod is to save replay when in one of the following situations:
+
+- the user is p1 or p2 in network battle, and:
+    - p1 or p2 presses ESC to end the game, or
+    - the game ends before one of the players wins because of desync, or
+    - the connection is lost
+- the user is spectating, and:
+    - the user presses ESC to stop spectating, or
+    - the connection is lost
+
+## Build
 Requires CMake, git and the VisualStudio compiler (MSVC).
 Both git and cmake needs to be in the PATH environment variable.
 
@@ -18,8 +27,8 @@ drop the folder onto the console.
 
 Now let's download the repository and initialize it for the first time
 ```
-git clone https://github.com/SokuDev/ModTemplate
-cd ModTemplate
+git clone https://github.com/Hagb/SaveRep
+cd SaveRep
 git submodule init
 git submodule update
 mkdir build
